@@ -1,0 +1,29 @@
+#owl-1 .card-title {
+  margin: auto 16px;
+  height: auto; }
+
+.owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .owl-dots button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: grey !important; }
+    .owl-dots button + button {
+      margin-left: 1%; }
+
+#cd-vertical-nav {
+  border-radius: 20px;
+  background-color: rgba(200, 200, 200, 0.75); }
+  #cd-vertical-nav ul {
+    margin-bottom: 0; }
+  #cd-vertical-nav .cd-dot {
+    top: 12px; }

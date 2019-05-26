@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-transparent navbar-absolute navbar-expand-lg">
+<nav class="navbar navbar-transparent navbar-absolute navbar-expand-lg">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-translate">
@@ -74,8 +74,8 @@
           </a>
         </li>
         <li class="dropdown nav-item">
-          <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true">
-            <i class="material-icons">settings</i>
+          <a href="#pablo" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" style="display: flex;align-items: center">
+            <i class="material-icons">g_translate</i> Русский
             <b class="caret"></b>
             <div class="ripple-container"></div>
           </a>
@@ -664,13 +664,25 @@
 
   </div>
 
-  <footer class="footer footer-default">
+  <footer class="footer" style="
+        position: absolute;
+        width: 100%;
+        background: transparent;
+        bottom: 0;
+        color: #fff;
+        z-index: 9;"
+  >
     <div class="container">
       <nav class="float-left">
         <ul>
           <li>
-            <a href="https://www.creative-tim.com/">
-              Creative Tim
+            <a href="profile-page.html">
+              Гостевой профиль
+            </a>
+          </li>
+          <li>
+            <a href="profile-page.html">
+              Профиль студента
             </a>
           </li>
         </ul>
@@ -679,11 +691,11 @@
         &copy;
         <script>
           document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a> for a better web.
+        </script>, сделано <a href="#">Digital Flat [Bo]</a>
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>

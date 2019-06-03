@@ -88,6 +88,11 @@ materialKit = {
     // Sliders for demo purpose
     var slider = document.getElementById('sliderRegular');
 
+    var slider2 = document.getElementById('sliderDouble');
+
+    if (slider === null) return;
+    if (slider2 === null) return;
+
     noUiSlider.create(slider, {
       start: 40,
       connect: [true, false],
@@ -96,8 +101,6 @@ materialKit = {
         max: 100
       }
     });
-
-    var slider2 = document.getElementById('sliderDouble');
 
     noUiSlider.create(slider2, {
       start: [20, 60],

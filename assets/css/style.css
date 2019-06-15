@@ -32,7 +32,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #33414a;
+  background-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Force Hardware Acceleration */
@@ -417,7 +417,6 @@ header::before {
   position: relative;
   z-index: 2;
   min-height: 100vh;
-  padding-top: 50px;
   background-color: #f2f2f2;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
@@ -431,8 +430,6 @@ header::before {
   transform: translateX(-260px); }
 
 @media only screen and (min-width: 1024px) {
-  .cd-main-content {
-    padding-top: 80px; }
   .cd-main-content.nav-is-visible {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);

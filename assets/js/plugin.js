@@ -80,6 +80,14 @@ jQuery(document).ready(function ($) {
         $('.cd-main-nav').toggleClass('moves-out');
     });
 
+    // $(window).scroll(function(){
+    //     if ($(window).scrollTop()>10){
+    //         $('header').toggleClass('sroll');
+    //     } else {
+    //         $('header').toggleClass('sroll');
+    //     }
+    // })
+
     function moveNavigation() {
         var navigation = $('.cd-main-nav-wrapper');
         var screenSize = checkWindowWidth();

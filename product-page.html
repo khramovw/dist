@@ -29,14 +29,16 @@
 <body class="product-page sidebar-collapse">
 
 <header>
-  <div class="cd-logo"><a href="#"><img src="./assets/img/logo.png" alt="Logo"></a></div>
 
-  <nav class="cd-main-nav-wrapper">
+  <div class="cd-logo"><a href="#" style="color: white; text-transform: uppercase; white-space: nowrap">Портал студента</a></div>
+  <!--  <div class="cd-logo"><a href="#"><img src="./assets/img/logo.png" alt="Logo"></a></div>-->
+
+  <nav class="cd-main-nav-wrapper navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
     <ul class="cd-main-nav">
       <li><a href="index.html">Главная</a></li>
-      <li><a href="introductory-company.html">Вступительная компания 2019</a></li>
+      <li><a href="introductory-company.html">Поступление 2019</a></li>
       <li><a href="traning.html">Подготовка поступлению</a></li>
-      <li><a href="testing.html">Тесты по профессии</a></li>
+      <li><a href="testing.html">Тесты</a></li>
       <li><a href="3d.html">3D тур</a></li>
       <li>
         <a href="#" class="cd-subnav-trigger"><span>Для студента</span></a>
@@ -44,16 +46,16 @@
         <ul>
           <li class="go-back"><a href="#0">Menu</a></li>
           <li><a href="blog-posts.html">Инфо портал</a></li>
-          <li><a href="product-page.html">Магазин</a></li>
+          <li><a href="ecommerce.html">Магазин</a></li>
           <li><a href="#">Навигатор по корпусам</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
           <li><a href="#" class="placeholder">Placeholder</a></li>
         </ul>
       </li>
     </ul> <!-- .cd-main-nav -->
   </nav> <!-- .cd-main-nav-wrapper -->
 
-  <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+  <a href="#0" class="cd-nav-trigger"><span></span></a>
 
 </header>
 
@@ -112,79 +114,26 @@
           <div class="col-md-6 col-sm-6">
             <h2 class="title"> Becky Silk Blazer </h2>
             <h3 class="main-price">$335</h3>
+            <h3 class="main-price mb-0"><strong>Артикул 5678</strong></h3>
             <div id="accordion" role="tablist">
               <div class="card card-collapse">
-                <div class="card-header" role="tab" id="headingOne">
+                <div class="card-header pt-0" role="tab" id="headingOne">
                   <h5 class="mb-0">
-                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Description
-                      <i class="material-icons">keyboard_arrow_down</i>
-                    </a>
+                    <p>
+                      Категория
+                    </p>
                   </h5>
                 </div>
-                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                <div  class="" >
                   <div class="card-body">
                     <p>Eres&apos; daring &apos;Grigri Fortune&apos; swimsuit has the fit and coverage of a bikini in a one-piece silhouette. This fuchsia style is crafted from the label&apos;s sculpting peau douce fabric and has flattering cutouts through the torso and back. Wear yours with mirrored sunglasses on vacation.</p>
                   </div>
                 </div>
               </div>
-              <div class="card card-collapse">
-                <div class="card-header" role="tab" id="headingTwo">
-                  <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Designer Information
-                      <i class="material-icons">keyboard_arrow_down</i>
-                    </a>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    An infusion of West Coast cool and New York attitude, Rebecca Minkoff is synonymous with It girl style. Minkoff burst on the fashion scene with her best-selling &apos;Morning After Bag&apos; and later expanded her offering with the Rebecca Minkoff Collection - a range of luxe city staples with a &quot;downtown romantic&quot; theme.
-                  </div>
-                </div>
-              </div>
-              <div class="card card-collapse">
-                <div class="card-header" role="tab" id="headingThree">
-                  <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Details and Care
-                      <i class="material-icons">keyboard_arrow_down</i>
-                    </a>
-                  </h5>
-                </div>
-                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
-                    <ul>
-                      <li>Storm and midnight-blue stretch cotton-blend</li>
-                      <li>Notch lapels, functioning buttoned cuffs, two front flap pockets, single vent, internal pocket</li>
-                      <li>Two button fastening</li>
-                      <li>84% cotton, 14% nylon, 2% elastane</li>
-                      <li>Dry clean</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="row pick-size">
-              <div class="col-md-6 col-sm-6">
-                <label>Select color</label>
-                <select class="selectpicker" data-style="select-with-transition" data-size="7">
-                  <option value="1">Rose </option>
-                  <option value="2">Gray</option>
-                  <option value="3">White</option>
-                </select>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <label>Select size</label>
-                <select class="selectpicker" data-style="select-with-transition" data-size="7">
-                  <option value="1">Small </option>
-                  <option value="2">Medium</option>
-                  <option value="3">Large</option>
-                </select>
-              </div>
-            </div>
+
             <div class="row pull-right">
-              <button class="btn btn-rose btn-round" data-toggle="modal" data-target="#loginModal">Заказать &#xA0;<i class="material-icons">shopping_cart</i></button>
+              <button class="btn btn-rose btn-round"  data-toggle="modal" data-target="#loginModal" style="font-size: 1.5rem;">Заказать &#xA0;<i class="material-icons">shopping_cart</i></button>
             </div>
           </div>
         </div>
@@ -227,25 +176,27 @@
 
 <footer class="footer">
   <div class="container">
-    <nav class="float-left">
-      <ul>
-        <li>
-          <a href="profile-page.html">
-            Гостевой профиль
-          </a>
-        </li>
-        <li>
-          <a href="profile-page.html">
-            Профиль студента
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="copyright float-right">
-      &copy;
-      <script>
-        document.write(new Date().getFullYear())
-      </script>, сделано <a href="#">Digital Flat [Bo]</a>
+    <div class="flex-row">
+      <nav>
+        <ul>
+          <li>
+            <a href="profile-page.html">
+              Гостевой профиль
+            </a>
+          </li>
+          <li>
+            <a href="profile-page.html">
+              Профиль студента
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, сделано <a href="#">Digital Flat [Bo]</a>
+      </div>
     </div>
   </div>
 </footer>
@@ -259,17 +210,6 @@
           <div class="card-header card-header-primary text-center">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
             <h4 class="card-title">Оформить заказ</h4>
-<!--            <div class="social-line">-->
-<!--              <a href="#pablo" class="btn btn-just-icon btn-link">-->
-<!--                <i class="fa fa-facebook-square"></i>-->
-<!--              </a>-->
-<!--              <a href="#pablo" class="btn btn-just-icon btn-link">-->
-<!--                <i class="fa fa-twitter"></i>-->
-<!--              </a>-->
-<!--              <a href="#pablo" class="btn btn-just-icon btn-link">-->
-<!--                <i class="fa fa-google-plus"></i>-->
-<!--              </a>-->
-<!--            </div>-->
           </div>
         </div>
         <div class="modal-body">
@@ -300,8 +240,8 @@
             </div>
           </form>
         </div>
-        <div class="modal-footer justify-content-center">
-          <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg" data-toggle="modal" data-target="#loginModal">Отправить</a>
+        <div class="modal-footer justify-content-center mb-5">
+          <a href="#pablo" class="btn btn-primary" style="font-size: 1.2rem;" data-toggle="modal" data-target="#loginModal">Отправить</a>
         </div>
       </div>
     </div>

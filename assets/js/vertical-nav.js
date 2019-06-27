@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
   });
 
   //open-close navigation on touch devices
-  $('.touch .cd-nav-trigger').on('click', function() {
+  $('.touch .cd-nav-trigger-vertical').on('click', function() {
     $('.touch #cd-vertical-nav').toggleClass('open');
 
   });

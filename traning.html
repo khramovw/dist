@@ -32,14 +32,16 @@
 <body class="blog-post sidebar-collapse">
 
 <header>
-  <div class="cd-logo"><a href="#"><img src="./assets/img/logo.png" alt="Logo"></a></div>
 
-  <nav class="cd-main-nav-wrapper">
+  <div class="cd-logo"><a href="#" style="color: white; text-transform: uppercase; white-space: nowrap">Портал студента</a></div>
+  <!--  <div class="cd-logo"><a href="#"><img src="./assets/img/logo.png" alt="Logo"></a></div>-->
+
+  <nav class="cd-main-nav-wrapper navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
     <ul class="cd-main-nav">
       <li><a href="index.html">Главная</a></li>
-      <li><a href="introductory-company.html">Вступительная компания 2019</a></li>
+      <li><a href="introductory-company.html">Поступление 2019</a></li>
       <li><a href="traning.html">Подготовка поступлению</a></li>
-      <li><a href="testing.html">Тесты по профессии</a></li>
+      <li><a href="testing.html">Тесты</a></li>
       <li><a href="3d.html">3D тур</a></li>
       <li>
         <a href="#" class="cd-subnav-trigger"><span>Для студента</span></a>
@@ -47,16 +49,16 @@
         <ul>
           <li class="go-back"><a href="#0">Menu</a></li>
           <li><a href="blog-posts.html">Инфо портал</a></li>
-          <li><a href="product-page.html">Магазин</a></li>
+          <li><a href="ecommerce.html">Магазин</a></li>
           <li><a href="#">Навигатор по корпусам</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
           <li><a href="#" class="placeholder">Placeholder</a></li>
         </ul>
       </li>
     </ul> <!-- .cd-main-nav -->
   </nav> <!-- .cd-main-nav-wrapper -->
 
-  <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+  <a href="#0" class="cd-nav-trigger"><span></span></a>
 
 </header>
 
@@ -79,21 +81,13 @@
 
              <div class="undefined">
                <p>
-                 Рік заснування – 1969
+                 61166, м. Харків, пр-т Науки, 9-А, ХНЕУ ім. Семена Кузнеця, бібліотечний корпус, 2 поверх, 131 кімн.
                </p>
                <p>
-                 61166, м. Харків, пр-т Науки, 9-А,<br>
-                 ХНЕУ ім. Семена Кузнеця,<br> бібліотечний корпус,<br> 2 поверх, 131 кімн.
+                 Тел. +38 (057) 702-18-25  |  Факс: +38 (057) 702-07-17  |  E-mail: depcourse@hneu.edu.ua
                </p>
-               <p>
-                 Тел. +38 (057) 702-18-25<br>
-                 Факс: +38 (057) 702-07-17
-               </p>
-               <p>
-                 E-mail: depcourse@hneu.edu.ua
-               </p>
-
              </div>
+
            </div>
 
            <div class="col-md-8 ml-auto mr-auto">
@@ -132,25 +126,27 @@
 
 <footer class="footer">
   <div class="container">
-    <nav class="float-left">
-      <ul>
-        <li>
-          <a href="profile-page.html">
-            Гостевой профиль
-          </a>
-        </li>
-        <li>
-          <a href="profile-page.html">
-            Профиль студента
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="copyright float-right">
-      &copy;
-      <script>
-        document.write(new Date().getFullYear())
-      </script>, сделано <a href="#">Digital Flat [Bo]</a>
+    <div class="flex-row">
+      <nav>
+        <ul>
+          <li>
+            <a href="profile-page.html">
+              Гостевой профиль
+            </a>
+          </li>
+          <li>
+            <a href="profile-page.html">
+              Профиль студента
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, сделано <a href="#">Digital Flat [Bo]</a>
+      </div>
     </div>
   </div>
 </footer>

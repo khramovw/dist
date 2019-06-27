@@ -8471,7 +8471,9 @@ a.text-success:focus {
   color: #3d8b40 !important; }
 
 .text-info {
-  color: #00bcd4 !important; }
+  color: #00bcd4 !important;
+  font-size: 1.5rem;
+}
 
 a.text-info:hover,
 a.text-info:focus {
@@ -13513,7 +13515,7 @@ textarea {
   position: relative; }
 
 .page-header {
-  height: 100vh;
+  height: 50vh;
   background-position: center center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -13676,7 +13678,7 @@ footer .pull-center {
   padding: 0.625rem 0;
   margin-bottom: 20px;
   color: #555;
-  background-color: #fff !important;
+  background-color: #cbcbcb !important;
   -webkit-box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15); }
 
@@ -13909,7 +13911,7 @@ footer .pull-center {
   background-color: transparent !important;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding-top: 25px;
+  /*padding-top: 25px;*/
   color: #fff; }
 
 #navbar .navbar {
@@ -17197,7 +17199,9 @@ thead.thead-inverse th,
   margin-top: 15px; }
 
 .card .card-title {
-  margin-top: 0.625rem; }
+  margin-top: 0.625rem;
+  font-size: 1.85rem;
+}
 
 .card .card-title:last-child {
   margin-bottom: 0; }
@@ -17637,7 +17641,7 @@ thead.thead-inverse th,
           border-radius: 6px; }
 
 .card-blog {
-  margin-top: 60px; }
+  margin-top: 30px; }
 
 .card-blog [class*="col-"] .card-header-image img {
   width: 100%; }
@@ -19636,13 +19640,13 @@ select.selectpicker {
   padding-top: 25px; }
 
 .blog-post .page-header {
-  min-height: 100vh; }
+  min-height: 50vh; }
 
 .blog-post .section-text {
   padding-bottom: 0; }
 
 .blog-post .section-text p {
-  font-size: 1.188rem;
+  font-size: 1.5rem;
   line-height: 1.5em;
   color: #555;
   margin-bottom: 30px; }
@@ -20386,7 +20390,7 @@ select.selectpicker {
   .navbar-collapse .navbar-nav .nav-item.active .nav-link:focus,
   .navbar-collapse .navbar-nav .nav-item.active .nav-link:active {
     background-color: #ecedef;
-    color: #3C4858; }
+    color: #000; }
   .navbar-collapse .navbar-nav .nav-item.button-container .nav-link {
     margin: 15px; }
   .navbar-collapse .navbar-nav .nav-item:after {

@@ -16,12 +16,9 @@
     <link href="./assets/css/material-kit.css?v=2.1.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
 <!--    <link href="./assets/demo/demo.css" rel="stylesheet" />-->
-    <link href="./assets/css/vertical-nav.css" rel="stylesheet" />
     <!--  Owlcarousel  -->
     <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css">
-
     <link rel="stylesheet" href="./assets/css/style.css">
-
     <!-- Modernizr -->
     <script src="assets/js/modernizr.js"></script>
 
@@ -29,15 +26,19 @@
 
 <body class="sections-page sidebar-collapse" style="position:relative;">
 
-    <header>
-    <div class="cd-logo"><a href="#"><img src="./assets/img/logo.png" alt="Logo"></a></div>
 
-    <nav class="cd-main-nav-wrapper">
+
+<header>
+
+    <div class="cd-logo"><a href="#" style="color: white; text-transform: uppercase; white-space: nowrap">Портал студента</a></div>
+    <!--  <div class="cd-logo"><a href="#"><img src="./assets/img/logo.png" alt="Logo"></a></div>-->
+
+    <nav class="cd-main-nav-wrapper navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
         <ul class="cd-main-nav">
             <li><a href="index.html">Главная</a></li>
-            <li><a href="introductory-company.html">Вступительная компания 2019</a></li>
+            <li><a href="introductory-company.html">Поступление 2019</a></li>
             <li><a href="traning.html">Подготовка поступлению</a></li>
-            <li><a href="testing.html">Тесты по профессии</a></li>
+            <li><a href="testing.html">Тесты</a></li>
             <li><a href="3d.html">3D тур</a></li>
             <li>
                 <a href="#" class="cd-subnav-trigger"><span>Для студента</span></a>
@@ -45,25 +46,28 @@
                 <ul>
                     <li class="go-back"><a href="#0">Menu</a></li>
                     <li><a href="blog-posts.html">Инфо портал</a></li>
-                    <li><a href="product-page.html">Магазин</a></li>
+                    <li><a href="ecommerce.html">Магазин</a></li>
                     <li><a href="#">Навигатор по корпусам</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                     <li><a href="#" class="placeholder">Placeholder</a></li>
                 </ul>
             </li>
         </ul> <!-- .cd-main-nav -->
     </nav> <!-- .cd-main-nav-wrapper -->
 
-    <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+    <a href="#0" class="cd-nav-trigger"><span></span></a>
 
 </header>
+
+
+
 
     <div class="main cd-main-content">
 
         <div class="cd-section" id="headers">
             <!--     *********     HEADER 1      *********      -->
             <div class="header-1">
-                <div class="page-header clear-filter" style="background-image: url('./assets/img/section-bg-3.jpg'); background-size: cover; position: relative">
+                <div class="page-header clear-filter h-fool" style="background-image: url('./assets/img/section-bg-3.jpg'); background-size: cover; position: relative">
                     <div class="page-header-image "></div>
                     <div class="container text-center">
                         <div class="col-md-8 ml-auto mr-auto">
@@ -84,7 +88,7 @@
         <div class="cd-section" id="features">
             <!--     *********     HEADER 2      *********      -->
             <div class="header-2">
-                <div class="page-header header-filter" style="background-image: url('./assets/img/section-bg-2.jpg');">
+                <div class="page-header header-filter h-fool" style="background-image: url('./assets/img/section-bg-2.jpg');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 ml-auto mr-auto text-center">
@@ -101,18 +105,15 @@
         <div class="cd-section" id="blogs">
             <!--     *********     HEADER 3      *********      -->
             <div class="header-3">
-                <div class="page-header header-filter" style="background-image: url('./assets/img/section-bg-1.jpg');">
+                <div class="page-header header-filter h-fool" style="background-image: url('./assets/img/section-bg-1.jpg');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 ml-auto mr-auto text-center">
                                 <h1 class="title"> You should work with us!</h1>
                                 <h4>Now you have no excuses, it&apos;s time to surprise your clients, your competitors, and why not, the world. You probably won&apos;t have a better chance to show off all your potential if it&apos;s not by designing a website for your own agency or web studio.</h4>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
             <!--     *********    END HEADER 3      *********      -->
@@ -120,16 +121,19 @@
 
     </div>
 
-    <footer class="footer" style="
-        position: absolute;
-        width: 100%;
-        background: transparent;
-        bottom: 0;
-        color: #fff;
-        z-index: 9;">
 
-        <div class="container">
-            <nav class="float-left">
+
+<footer class="footer" style="
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    bottom: 0;
+    color: #fff;
+    z-index: 9;">
+
+    <div class="container">
+        <div class="flex-row">
+            <nav>
                 <ul>
                     <li>
                         <a href="profile-page.html">
@@ -143,25 +147,25 @@
                     </li>
                 </ul>
             </nav>
-            <div class="copyright float-right">
+            <div class="copyright">
                 &copy;
                 <script>
                     document.write(new Date().getFullYear())
                 </script>, сделано <a href="#">Digital Flat [Bo]</a>
             </div>
         </div>
+    </div>
 
-    </footer>
+</footer>
 
 
     <!--   Core JS Files   -->
 
-<!--    <script src="./assets/js/plugins/jquery-2.1.1.js" type="text/javascript"></script>-->
     <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-    <script src="assets/js/plugin.js"></script>
+
     <script src="./assets/js/plugins/moment.min.js"></script>
 
     <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
@@ -174,14 +178,14 @@
     <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
     <script src="./assets/js/plugins/bootstrap-tagsinput.js"></script>
     <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-    <script src="./assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/bootstrap-selectpicker.js"></script>
     <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-    <script src="./assets/js/plugins/jasny-bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/jasny-bootstrap.min.js"></script>
     <!--	Plugin for Small Gallery in Product Page -->
-    <script src="./assets/js/plugins/jquery.flexisel.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/jquery.flexisel.js"></script>
     <!-- Plugins for presentation and navigation  -->
-<!--    <script src="./assets/demo/modernizr.js" type="text/javascript"></script>-->
-    <script src="./assets/js/vertical-nav.js" type="text/javascript"></script>
+    <script src="./assets/js/modernizr.js"></script>
+    <script src="./assets/js/vertical-nav.js"></script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Js With initialisations For Demo Purpose, Don't Include it in Your Project -->
@@ -189,38 +193,18 @@
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="./assets/js/material-kit.js?v=2.1.1" type="text/javascript"></script>
 
-    <script>
-        $(document).ready(function() {
-            //init DateTimePickers
-            materialKit.initFormExtendedDatetimepickers();
+<!--    <script>-->
+<!--        $(document).ready(function() {-->
+<!--            //init DateTimePickers-->
+<!--            materialKit.initFormExtendedDatetimepickers();-->
 
-            // Sliders Init
-            materialKit.initSliders();
-        });
-    </script>
+<!--            // Sliders Init-->
+<!--            materialKit.initSliders();-->
+<!--        });-->
+<!--    </script>-->
+    <script src="assets/js/plugin.js"></script>
 
-    <nav id="cd-vertical-nav">
-        <ul>
-            <li>
-                <a href="#headers" data-number="1">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Headers</span>
-                </a>
-            </li>
-            <li>
-                <a href="#features" data-number="2">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Features</span>
-                </a>
-            </li>
-            <li>
-                <a href="#blogs" data-number="3">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Blogs</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+
     
 </body>
 </html>

@@ -1,63 +1,42 @@
-/*jslint browser: true*/
-/*global $, jQuery, alert*/
-(function($) {
-    'use strict';
+$(document).ready(function () {
 
-    $(function() {
+    var navListItems = $('div.setup-panel div a'),
+        allWells = $('.setup-content'),
+        allNextBtn = $('.nextBtn');
 
-        $(document).ready(function() {
-            function triggerClick(elem) {
-                $(elem).click();
-            }
-            var $progressWizard = $('.stepper'),
-                $tab_active,
-                $tab_prev,
-                $tab_next,
-                $btn_prev = $progressWizard.find('.prev-step'),
-                $btn_next = $progressWizard.find('.next-step'),
-                $tab_toggle = $progressWizard.find('[data-toggle="tab"]'),
-                $tooltips = $progressWizard.find('[data-toggle="tab"][title]');
+    allWells.hide();
 
-            // To do:
-            // Disable User select drop-down after first step.
-            // Add support for payment type switching.
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this);
 
-            //Initialize tooltips
-            $tooltips.tooltip();
-
-            //Wizard
-            $tab_toggle.on('show.bs.tab', function(e) {
-                var $target = $(e.target);
-
-                if (!$target.parent().hasClass('active, disabled')) {
-                    $target.parent().prev().addClass('completed');
-                }
-                if ($target.parent().hasClass('disabled')) {
-                    return false;
-                }
-            });
-
-            // $tab_toggle.on('click', function(event) {
-            //     event.preventDefault();
-            //     event.stopPropagation();
-            //     return false;
-            // });
-
-            $btn_next.on('click', function() {
-                $tab_active = $progressWizard.find('.active');
-
-                $tab_active.next().removeClass('disabled');
-
-                $tab_next = $tab_active.next().find('a[data-toggle="tab"]');
-                triggerClick($tab_next);
-
-            });
-            $btn_prev.click(function() {
-                $tab_active = $progressWizard.find('.active');
-                $tab_prev = $tab_active.prev().find('a[data-toggle="tab"]');
-                triggerClick($tab_prev);
-            });
-        });
+        if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-success').addClass('btn-default');
+            $item.addClass('btn-success');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+        }
     });
 
-}(jQuery, this));
+    allNextBtn.click(function () {
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find("input[type='text'],input[type='url']"),
+            isValid = true;
+
+        $(".form-group").removeClass("has-error");
+        for (var i = 0; i < curInputs.length; i++) {
+            if (!curInputs[i].validity.valid) {
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+
+        if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+    });
+
+    $('div.setup-panel div a.btn-success').trigger('click');
+});
